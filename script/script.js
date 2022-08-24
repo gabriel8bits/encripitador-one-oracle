@@ -1,14 +1,14 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
+document.getElementById("div-aparece").style.display = "none";
 
 
 //Encriptar a mensagem
-
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value);
     mensagem.value = textoEncriptado;
     mensagem.style.backgrounImage="none";
-   // aparece();
+    aparece();
 }
 
 function encriptar(stringEncriptada) {
@@ -26,13 +26,10 @@ function encriptar(stringEncriptada) {
 
 
 //Desencriptar a mensagem
-
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(inputTexto.value);
     mensagem.value = textoEncriptado;
     mensagem.style.backgrounImage="none";
-    
-    console.log("clicou");
 }
 
 function desencriptar(stringDesencriptada) {
@@ -45,9 +42,18 @@ function desencriptar(stringDesencriptada) {
         }
     }
 
-    return stringDesencriptada
+    return stringDesencriptada;
 }
 
-/*function aparece() {
+// Função de copiar
+
+function btnCopiar() {
+    const msg = document.querySelector(".mensagem");
+    msg.select();
+    navigator.clipboard.writeText(msg.value);
+    msg.value = "";
+}
+
+function aparece() {
     document.getElementById("div-aparece").style.display = 'block';
-}*/
+}
