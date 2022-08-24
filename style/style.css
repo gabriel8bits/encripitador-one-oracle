@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 main {
     display: flex;
