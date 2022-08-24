@@ -9,8 +9,6 @@ function btnEncriptar() {
     mensagem.value = textoEncriptado;
     mensagem.style.backgrounImage="none";
    // aparece();
-
-    console.log("clicou")
 }
 
 function encriptar(stringEncriptada) {
@@ -24,6 +22,30 @@ function encriptar(stringEncriptada) {
     }
 
     return stringEncriptada;
+}
+
+
+//Desencriptar a mensagem
+
+function btnDesencriptar() {
+    const textoEncriptado = desencriptar(inputTexto.value);
+    mensagem.value = textoEncriptado;
+    mensagem.style.backgrounImage="none";
+    
+    console.log("clicou");
+}
+
+function desencriptar(stringDesencriptada) {
+    let matrizCodico = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    stringDesencriptada = stringDesencriptada.toLowerCase();
+
+    for(let i = 0; i < matrizCodico.length; i++) {
+        if(stringDesencriptada.includes(matrizCodico[i][1])) {
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodico[i][1], matrizCodico[i][0]);
+        }
+    }
+
+    return stringDesencriptada
 }
 
 /*function aparece() {
