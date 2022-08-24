@@ -3,9 +3,72 @@
 * {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
-    font-weight: 400
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+header {
+    padding: 5px;
+    background-color: #bcc1f573;
+    margin-bottom: 30px;
 }
 
 main {
     display: flex;
+    margin: 0 0 50px 80px;
 }
+
+.input-texto {
+    margin-top: 90px;
+}
+
+.mensagem {
+    position: absolute;
+    margin: 20px 0 0 190px;
+    background-image: url(../img/imagem_pessoa.png);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.copiar {
+    position: relative;
+    margin: 330px 0 0 205px;
+    border-radius: 10px;
+}
+
+.encriptar {
+    background-color: #00008b;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.descriptografar {
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.informacao {
+    font-size: 15px;
+}
+
+footer {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    background: #bcc1f573;
+
+}
+
