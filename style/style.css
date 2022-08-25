@@ -30,7 +30,7 @@ textarea {
 
 .input-texto {
     margin-top: 25px;
-    box-shadow: 1px 2px 5px #0000002a;
+    box-shadow: 3px 3px 5px #0000000e;
 }
 
 .informacao {
@@ -50,7 +50,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: 18px;
     background-size: 300px;
-    box-shadow: 1px 2px 5px #0000002a;
+    box-shadow: 3px 3px 5px #0000000e;
 }
 
 .botoes {
@@ -92,4 +92,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: #000000;
 }
